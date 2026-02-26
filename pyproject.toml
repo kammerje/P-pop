@@ -1,0 +1,22 @@
+[project]
+name = "ppop"
+description = "Synthetic planet population generator"
+readme = "README.rst"
+version = "1.0.0"
+authors = [
+  { name="Jens Kammerer", email="jkammere@eso.org" },
+]
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "setuptools_scm[toml]>=6.2",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "P-pop/_version.py"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ['requirements.txt']}
