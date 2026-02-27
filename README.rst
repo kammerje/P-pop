@@ -1,5 +1,5 @@
 #####
-P-pop
+.. image:: logo.png
 #####
 
 P-pop is a Python tool for generating synthetic planet populations. A brief documentation can be found in :code:`P-pop/Documentation.pdf`.
