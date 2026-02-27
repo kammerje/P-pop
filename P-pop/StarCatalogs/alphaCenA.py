@@ -160,7 +160,7 @@ class StarCatalog():
         else:
             print('--> Effective temperature in [%.1f, %.1f] K' % (text8, text9)+', effective temperature limits [%.1f, %.1f] K' % (Teff_range[0], Teff_range[1]))
         
-        return SC_out[1:2]
+        return SC_out[1:2] # select a custom subset of the full catalog here to simulate planets only around a specific sample of stars
     
     def SummaryPlot(self,
                     FigDir=None,

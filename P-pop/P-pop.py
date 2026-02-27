@@ -1,6 +1,6 @@
 """
 # =============================================================================
-# P-POP
+# P-pop
 # A Monte-Carlo tool to simulate exoplanet populations
 #
 # Authors: Jens Kammerer, Sascha Quanz, Emile Fontanet
@@ -26,7 +26,7 @@ warnings.filterwarnings('ignore')
 # IMPORTS
 # =============================================================================
 
-# Import your own catalogs, distributions and models here.
+# Import catalogs, distributions, and models here.
 import SystemGenerator
 from StarCatalogs import alphaCenA,\
                          CrossfieldBrightSample,\
@@ -64,10 +64,9 @@ from ExozodiModels import Ertel2018,\
 # SETUP
 # =============================================================================
 
-# Select the catalogs, distributions and models which you want to use here.
-
-# Select the star catalog, the spectral types, the distance range and the
-# declination range which should be included here.
+# Select the star catalog, the spectral types, the distance range, the
+# declination range, and the effective temperature range which should be
+# included here.
 # StarCatalog = CrossfieldBrightSample # used in Kammerer & Quanz 2018
 # StarCatalog = ExoCat1 # used by NASA
 # StarCatalog = LTC2 # LIFE Target Catalog (version 2)
@@ -105,7 +104,7 @@ Scenario = 'baseline'
 ScalingModel = BinarySuppression
 
 # Select the mass model, the eccentricity model, the stability model, the orbit
-# model, the albedo model and the exozodiacal dust model which should be used
+# model, the albedo model, and the exozodiacal dust model which should be used
 # here.
 MassModel = Chen2017 # Forecaster
 EccentricityModel = Circular
@@ -118,8 +117,8 @@ AlbedoModel = Uniform
 ExozodiModel = Ertel2020
 # ExozodiModel = Median
 
-# Select whether you want to display summary plots after loading the catalogs,
-# distributions and models selected above, how many test draws should be
+# Select whether you want to generate summary plots after loading the catalogs,
+# distributions, and models selected above, how many test draws should be
 # done for generating these plots, and where you want to save them.
 SummaryPlots = True
 # SummaryPlots = False
@@ -127,8 +126,8 @@ Ntest = 100000 # int
 # Ntest = 10000 # int
 # FigDir = None # if you don't want to save the summary plots
 FigDir = 'Figures/' # str, should end with a slash ("/")
-# block = True
-block = False
+# block = True # interrupt script and display summary plots
+block = False # don't interrupt script, only save summary plots
 
 # Select a name for the output planet population table and how many universes
 # should be simulated.
