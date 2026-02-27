@@ -25,7 +25,7 @@ PathPlanetTable = 'TestPlanetPopulation.txt' # str
 
 # Select a model for the computation of the habitable zone.
 Model = 'MS'
-#Model = 'POST-MS'
+# Model = 'POST-MS'
 
 
 # =============================================================================
