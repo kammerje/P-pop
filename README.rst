@@ -89,21 +89,26 @@ Available orbit models:
 - :code:`Random`: Distribute planets randomly on the sphere.
 
 Available mass models:
+
 - :code:`Chen2017`: Use :code:`Forecaster` (`Chen & Kipping (2017) <https://ui.adsabs.harvard.edu/abs/2017ApJ...834...17C/abstract>`__) to forecast planet masses from planet radii and vice versa.
 - :code:`EarthMass`: Assign a mass of 1 Earth mass to every planet.
 
 Available albedo models:
+
 - :code:`Constant`: Assign a constant Bond albedo of 0.4, geometric visible albedo of 0.3, and geometric mid-infrared albedo of 0.05 to every planet.
 - :code:`EarthAlbedo`: Assign a constant Bond albedo of 0.306, geometric visible albedo of 0.434, and geometric mid-infrared albedo of 0.05 to every planet.
 - :code:`Uniform`: Distribute the albedos uniformly with a Bond albedo in [0.0, 0.8), a geometric visible albedo in [0.0, 0.6), and a geometric mid-infrared albedo in [0.0, 0.1).
 
 Available exozodi models:
+
 - :code:`Ertel2018`: From `Ertel et al. (2018) <https://ui.adsabs.harvard.edu/abs/2018AJ....155..194E/abstract>`__.
 - :code:`Ertel2020`: From `Ertel et al. (2020) <https://ui.adsabs.harvard.edu/abs/2020AJ....159..177E/abstract>`__.
 - :code:`Median`: Assign an exozodi level of 3 zodi to every system.
 
 Available stability models:
+
 - :code:`He2019`: From `He et al. (2019) <https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.4575H/abstract>`__. Re-draw planets generated in multi-planet systems until mutually stable orbits are found. Note that this alters the original planet radius and orbital period distribution slightly. A summary plot showing the impact of this can be created.
 
 Available scaling models:
+
 - :code:`BinarySuppression`: Suppress the planet occurrence rate around <50 au binaries to 30% of its nominal value according to `Kraus et al. (2016) <https://ui.adsabs.harvard.edu/abs/2016AJ....152....8K/abstract>`__.
