@@ -54,6 +54,7 @@ Package content
 Available star catalogs:
 
 - :code:`alphaCenA`: From `Crossfield (2013) <https://ui.adsabs.harvard.edu/abs/2013A%26A...551A..99C/abstract>`__, but using only the star alpha Cen A from that catalog. Serves as an example for how to select custom subsets of any of the provided star catalogs.
+- :code:`CrossfieldBrightSample`: From `Crossfield (2013) <https://ui.adsabs.harvard.edu/abs/2013A%26A...551A..99C/abstract>`__.
 - :code:`ExoCat1`: From `Turnbull (2015) <https://ui.adsabs.harvard.edu/abs/2015arXiv151001731T/abstract>`__.
 - :code:`HPIC_LTC4_combined`: Custom combination of HPIC and LTC4.
 - :code:`HPIC`: From `Tuchow et al. (2024) <https://ui.adsabs.harvard.edu/abs/2024arXiv240208038T/abstract>`__.
@@ -90,7 +91,7 @@ Available orbit models:
 
 Available mass models:
 
-- :code:`Chen2017`: Use :code:`Forecaster` (`Chen & Kipping (2017) <https://ui.adsabs.harvard.edu/abs/2017ApJ...834...17C/abstract>`__) to forecast planet masses from planet radii and vice versa.
+- :code:`Chen2017`: Use :code:`Forecaster` (`Chen & Kipping 2017 <https://ui.adsabs.harvard.edu/abs/2017ApJ...834...17C/abstract>`__) to forecast planet masses from planet radii and vice versa.
 - :code:`EarthMass`: Assign a mass of 1 Earth mass to every planet.
 
 Available albedo models:
@@ -107,7 +108,7 @@ Available exozodi models:
 
 Available stability models:
 
-- :code:`He2019`: From `He et al. (2019) <https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.4575H/abstract>`__. Re-draw planets generated in multi-planet systems until mutually stable orbits are found. Note that this alters the original planet radius and orbital period distribution slightly. A summary plot showing the impact of this can be created.
+- :code:`He2019`: From `He et al. (2019) <https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.4575H/abstract>`__. Re-draw planets generated in multi-planet systems until mutually stable orbits are found. Note that this alters the original planet radius and orbital period distribution slightly. A summary plot showing the impact of this can be generated.
 
 Available scaling models:
 
